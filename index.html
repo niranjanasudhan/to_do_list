@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class=" ">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 login">
+
+
+
+                <form>
+                    <h2 class="main_logo"><img src="images/logo.png">My To Do List</h2>
+                    <h1 class="login_head">Log in to Your Account</h1>
+                    <hr>
+                    <div class="alert alert-danger error_msg">
+                        <strong>Error!!!</strong> Username or Password is incurrect.
+                    </div>
+                    <div class="row fmain">
+                        <div class="col-md-4">
+                            <label class="fname">Username</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="username" id="username" placeholder="Enter Username" class="form-control inbox">
+                        </div>
+                    </div>
+                    <div class="row fmain">
+                        <div class="col-md-4">
+                            <label class="fname">Password</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" name="password" placeholder="Enter Password" id="password" class="form-control inbox">
+                        </div>
+                    </div>
+                    <div class="row fbutton">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-primary" id="btn_login">LOGIN</button>
+                        </div>
+                        <div class="col-md-4"></div>
+
+                    </div>
+                </form>
+
+
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

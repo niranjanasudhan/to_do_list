@@ -1,0 +1,156 @@
+body {
+    /* background-color: #e5add2 !important; */
+    /* background-image: linear-gradient(to right, #e5add2, #8cc5ea) !important; */
+    min-height: 800px;
+    background-color: #e5add2;
+    /* background-image: linear-gradient(to bottom right, red, yellow) !important; */
+    background-image: linear-gradient(to right, #e5add2, #8cc5ea) !important;
+    margin: 0px;
+}
+
+.navbar {
+    background-color: #000 !important;
+    height: 80px;
+}
+
+.login {
+    margin: auto !important;
+    width: 100% !important;
+    border: 1px solid #ccc !important;
+    background-color: #fff !important;
+    margin-top: 10% !important;
+    padding: 20px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 18px 0px !important;
+}
+
+.logo {
+    width: 5%;
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+.container {
+    background-color: #fff;
+    min-height: 800px;
+    padding: 50px !important;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: cursive;
+    margin-top: 68px;
+}
+
+input[type='checkbox'] {
+    /* -webkit-appearance: none; */
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 5px !important;
+    border: 2px solid #555;
+    vertical-align: middle;
+}
+
+input[type='checkbox']:checked {
+    /* background: #abd; */
+}
+
+.check_value {
+    padding-left: 10px;
+    margin-top: -5px;
+}
+
+.login_head {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.fmain {
+    padding: 10px;
+}
+
+.fname {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.inbox:hover,
+.inbox:active,
+.inbox:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-control::selection {
+    border-bottom: 2px solid #abd !important;
+}
+
+.form-control {
+    border: none !important;
+    border-bottom: 2px solid #e5add2 !important;
+}
+
+.fbutton {
+    text-align: center !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#btn_login {
+    height: 50px;
+    width: 150px;
+    background-color: #abd;
+    border: 2px solid #abd;
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+#btn_login:hover {
+    background-color: #e5add2;
+    border: 2px solid #e5add2;
+}
+
+.main_logo {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main_logo img {
+    width: 10%;
+}
+
+.error_msg {
+    display: none;
+    padding: 40px;
+}
+
+.nav-link {
+    font-size: 22px !important;
+    color: #ebe7e7 !important;
+}
+
+.navbar-nav li {
+    width: 40%;
+}
+
+.navbar-nav {
+    width: 300px !important;
+}
+
+.navbar-brand {
+    width: 100% !important;
+}
