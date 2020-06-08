@@ -283,4 +283,7 @@ input[type='checkbox']:checked+.check_value {
     .todo_section {
         padding: 20px !important;
     }
+    .suc_img {
+        width: 65%;
+    }
 }
