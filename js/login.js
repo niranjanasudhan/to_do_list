@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('logged');
+    if (myParam == '0') {
+        $('.error_login').css('display', 'block');
+    }
 
     //Login Section
     function login_check(username, password, validate) {
@@ -10,14 +15,21 @@ $(document).ready(function() {
         } else {
             flag = false;
         }
-        validate(flag);
+        validate(flag, username.trim());
         // if()
 
     }
 
-    function validate(flag) {
+    function validate(flag, username) {
         if (flag == true) {
             $('.error_msg').css('display', 'none');
+            // Check browser support
+            if (typeof(Storage) !== "undefined") {
+                // Store
+                localStorage.setItem("username", username);
+                // Retrieve
+                //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+            }
             window.location = "home.html";
         } else {
             // document.getElementsByClassName('error').style.display = "block";

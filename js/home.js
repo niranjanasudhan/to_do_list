@@ -1,5 +1,16 @@
     //home section
     $(document).ready(function() {
+        if (typeof(Storage) !== "undefined") {
+            if (!localStorage.getItem("username")) {
+                window.location = "index.html?logged=0";
+            }
+            // Store
+            // localStorage.setItem("username", username);
+            // Retrieve
+            //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        } else {
+
+        }
         $.ajax({
             type: "GET",
             datatype: "json",
@@ -44,9 +55,10 @@
             let promise = check(count);
             promise
                 .then(function(data) {
-                    alert("Congrats,  5 tasks have been successfully completed");
+                    // alert("Congrats,  5 tasks have been successfully completed");
+                    $('.overlay').css("display", "block");
                 }).catch(function(error) {
-
+                    $('.overlay').css("display", "none");
                 });
 
         }
@@ -55,4 +67,15 @@
             count = count - 1;
 
         }
+    }
+
+    function logout() {
+        if (typeof(Storage) !== "undefined") {
+            localStorage.removeItem("username");
+        }
+        window.location = "index.html";
+    }
+
+    function close_win() {
+        $('.overlay').css("display", "none");
     }
