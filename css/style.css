@@ -142,6 +142,11 @@ input[type='checkbox']:checked+.check_value {
     padding: 40px;
 }
 
+.error_login_msg {
+    display: none;
+    padding: 40px;
+}
+
 .error_login {
     display: none;
     padding: 40px;

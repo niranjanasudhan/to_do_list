@@ -33,6 +33,7 @@ $(document).ready(function() {
             window.location = "home.html";
         } else {
             // document.getElementsByClassName('error').style.display = "block";
+            $('.error_login_msg').css('display', 'none');
             $('.error_msg').css('display', 'block');
         }
     }
@@ -40,7 +41,14 @@ $(document).ready(function() {
     $('#btn_login').click(function() {
         let username = document.getElementById('username').value;
         let password = document.getElementById('password').value;
-        login_check(username, password, validate);
+        if (username.trim() != "" && password.trim() != "") {
+            login_check(username, password, validate);
+        } else {
+            $('.error_login').css('display', 'none');
+            $('.error_login_msg').css('display', 'block');
+
+        }
+
     });
 
 
